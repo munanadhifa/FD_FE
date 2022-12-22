@@ -24,6 +24,9 @@ const TableList = () => {
       headers: {
         "Content-Type": "text/plain",
         "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+        "Access-Control-Allow-Headers":
+          "Origin, X-Requested-With, Content-Type, Accept, Authorization",
       },
     })
       .then((response) => {
