@@ -1,11 +1,14 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const port = 4000;
 
-app.use(cors({}));
+app.use(cors());
 
 app.get("/", (req, res) => {
-  res.json({ name: "cors", subscribe: true });
+  res.send("Hello World!");
 });
 
-app.listen(5000, () => console.log("server is listening on 5000"));
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
